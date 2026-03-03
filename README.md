@@ -24,17 +24,24 @@ Access API using Invoke URL,
 🛠️ AWS Services Used
 
 AWS Lambda
+
 Amazon API Gateway (REST API)
+
 IAM Role
 
 🏗️ Architecture
+
 Client → API Gateway (test-api) → Lambda (Demo-lfunction) → Response
+
 No EC2. No server management. Fully serverless.
 
 
 🔄 Implementation Steps
+
 Step 1: Create Lambda Function
+
 Function Name: Demo-lfunction
+
 Runtime: Python
 
 Code used:
@@ -43,25 +50,38 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': 'Hello from AWS Lambda + API Gateway'
     }
+    
 Step 2: Create REST API
+
 API Name: test-api
+
 Protocol: REST
+
 Endpoint Type: Regional
 
 Step 3: Create Resource
+
 Resource Path: /welcome
 
 
 Step 4: Create Method
+
 Method: GET
+
 Integration Type: Lambda
+
 Lambda Function: Demo-lfunction
+
 Authorization: None
 
 Step 5: Deploy API
+
 Stage Name: QA
+
 Deploy API
+
 Invoke URL:
+
 https://oe1qhwd83.execute-api.us-east-1.amazonaws.com/QA/welcome
 
 
