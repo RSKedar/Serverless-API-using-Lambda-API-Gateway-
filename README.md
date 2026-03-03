@@ -11,11 +11,15 @@ The API successfully invokes the Lambda function and returns a response.
 
 🎯 Objective
 
-Create a Lambda function
-Integrate Lambda with API Gateway
-Create REST API
-Deploy API to stage QA
-Access API using Invoke URL
+Create a Lambda function,
+
+Integrate Lambda with API Gateway,
+
+Create REST API,
+
+Deploy API to stage QA,
+
+Access API using Invoke URL,
 
 🛠️ AWS Services Used
 
