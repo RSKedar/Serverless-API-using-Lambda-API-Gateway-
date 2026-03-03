@@ -45,10 +45,15 @@ Function Name: Demo-lfunction
 Runtime: Python
 
 Code used:
+
 def lambda_handler(event, context):
+
     return {
+    
         'statusCode': 200,
+        
         'body': 'Hello from AWS Lambda + API Gateway'
+        
     }
     
 Step 2: Create REST API
